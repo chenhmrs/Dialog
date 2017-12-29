@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="apply_success">Apply Success</string>
+    <string name="apply_talk">Your theme of color phone has been set up!Enjoy it!</string>
+</resources>
