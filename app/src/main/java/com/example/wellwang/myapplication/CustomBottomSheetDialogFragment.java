@@ -3,6 +3,9 @@ package com.example.wellwang.myapplication;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetDialogFragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,7 +19,17 @@ public class CustomBottomSheetDialogFragment extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.bottom_sheet,null);
+        Log.d("sffef","zzzz");
+
+        String tag=getTag();
+        Log.d("sffef","tag="+tag);
+        View view=null;
+        if (tag.equals("adc")){
+             view=inflater.inflate(R.layout.bottom_sheet1,null);
+        }else if (tag.equals("dialog")){
+             view=inflater.inflate(R.layout.bottom_sheet,null);
+        }
+
         return view;
     }
 }

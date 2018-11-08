@@ -1,49 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent">
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context="com.example.wellwang.myapplication.MainActivity">
+
         <Button
             android:id="@+id/button_dialog1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DialogActivity"/>
+            android:text="DialogActivity"
+            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/button_dialog2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ExtendsDialog"/>
+            android:text="ExtendsDialog"
+            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/button_dialog3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ExtendsDialogFragment"/>
+            android:text="ExtendsDialogFragment" />
+
         <Button
-            android:text="ExtendsDialogFragmentAlertDialog"
             android:id="@+id/button_dialog4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="ExtendsDialogFragmentAlertDialog"
+            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/bottom_sheet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BottomSheet"/>
+            android:text="BottomSheet"
+            android:textAllCaps="false" />
+
         <Button
             android:id="@+id/dialogfragment_sheet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CustomBottomSheetDialogFragment"/>
+            android:text="CustomBottomSheetDialogFragment"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/dialogfragment_sheet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomBottomSheetDialogFragment1"
+            android:textAllCaps="false" />
     </LinearLayout>
-       <!-- 下面这个布局 就是我们的底部菜单-->
-    <include layout="@layout/bottom_sheet"/>
+    <!-- 下面这个布局 就是我们的底部菜单-->
+    <include layout="@layout/bottom_sheet" />
 
 </android.support.design.widget.CoordinatorLayout>

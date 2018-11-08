@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements LoginInputListene
 
     }
 
-    @OnClick({R.id.button_dialog1, R.id.button_dialog2, R.id.button_dialog3, R.id.button_dialog4,R.id.bottom_sheet,R.id.dialogfragment_sheet})
+    @OnClick({R.id.button_dialog1, R.id.button_dialog2, R.id.button_dialog3, R.id.button_dialog4,R.id.bottom_sheet,R.id.dialogfragment_sheet,R.id.dialogfragment_sheet1})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_dialog1:
@@ -83,6 +83,11 @@ public class MainActivity extends AppCompatActivity implements LoginInputListene
             case R.id.dialogfragment_sheet:
                 CustomBottomSheetDialogFragment fragment=new CustomBottomSheetDialogFragment();
                 fragment.show(getSupportFragmentManager(),"dialog");
+                break;
+            case R.id.dialogfragment_sheet1:
+                Log.d("sffef","ddddd=");
+                CustomBottomSheetDialogFragment fragment1=new CustomBottomSheetDialogFragment();
+                fragment1.show(getSupportFragmentManager(),"adc");
                 break;
         }
 
