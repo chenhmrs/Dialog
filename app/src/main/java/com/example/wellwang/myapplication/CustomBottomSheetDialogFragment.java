@@ -2,6 +2,7 @@ package com.example.wellwang.myapplication;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.design.widget.BottomSheetDialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -16,6 +17,14 @@ import android.view.ViewGroup;
 
 public class CustomBottomSheetDialogFragment extends BottomSheetDialogFragment {
 
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setStyle(BottomSheetDialogFragment.STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme);
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -29,6 +38,12 @@ public class CustomBottomSheetDialogFragment extends BottomSheetDialogFragment {
         }else if (tag.equals("dialog")){
              view=inflater.inflate(R.layout.bottom_sheet,null);
         }
+//        BottomSheetDialog dialog = (BottomSheetDialog) super.onCreateDialog(savedInstanceState);
+//
+//        dialog.setContentView(view);
+//
+//        ((View) view.getParent()).setBackgroundColor(getResources().getColor(android.R.color.transparent));
+
 
         return view;
     }

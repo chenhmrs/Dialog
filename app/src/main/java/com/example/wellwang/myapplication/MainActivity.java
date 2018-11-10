@@ -1,8 +1,11 @@
 package com.example.wellwang.myapplication;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Display;
@@ -30,11 +33,11 @@ public class MainActivity extends AppCompatActivity implements LoginInputListene
         ButterKnife.bind(this);
        dialogFragment= new ExtendsDialogFragment();
 
-        //获取到Bottom Sheet对象
-        View bottomSheet = findViewById(R.id.design_bottom_sheet);
-        behavior = BottomSheetBehavior.from(bottomSheet);
-        //默认设置为隐藏
-        behavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+//        //获取到Bottom Sheet对象
+//        View bottomSheet = findViewById(R.id.design_bottom_sheet);
+//        behavior = BottomSheetBehavior.from(bottomSheet);
+//        //默认设置为隐藏
+//        behavior.setState(BottomSheetBehavior.STATE_HIDDEN);
 
     }
 
@@ -83,6 +86,11 @@ public class MainActivity extends AppCompatActivity implements LoginInputListene
             case R.id.dialogfragment_sheet:
                 CustomBottomSheetDialogFragment fragment=new CustomBottomSheetDialogFragment();
                 fragment.show(getSupportFragmentManager(),"dialog");
+//                BottomSheetDialog dialog2 = (BottomSheetDialog) super.onCreateDialog(0);
+//                View view2 = View.inflate(this, R.layout.bottom_sheet, null);
+//                dialog2.setContentView(view2);
+//                ((View) view.getParent()).setBackgroundColor(getResources().getColor(android.R.color.transparent));
+
                 break;
             case R.id.dialogfragment_sheet1:
                 Log.d("sffef","ddddd=");

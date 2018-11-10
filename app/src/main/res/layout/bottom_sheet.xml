@@ -5,15 +5,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    app:behavior_hideable="true"
-    app:behavior_peekHeight="300dp"
-    app:elevation="4dp"
-    app:layout_behavior="@string/bottom_sheet_behavior">>
-    <View
-        android:background="#f00"
+    android:background="@drawable/circle_bg">
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:padding="30dp"
+        android:layout_height="100dp"/>
     <View
         android:background="#0f0"
         android:layout_width="match_parent"

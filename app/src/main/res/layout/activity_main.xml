@@ -62,6 +62,6 @@
             android:textAllCaps="false" />
     </LinearLayout>
     <!-- 下面这个布局 就是我们的底部菜单-->
-    <include layout="@layout/bottom_sheet" />
+    <!--<include layout="@layout/bottom_sheet" />-->
 
 </android.support.design.widget.CoordinatorLayout>
